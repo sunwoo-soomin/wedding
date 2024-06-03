@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div class="">
-      <RouterLink to="/card"></RouterLink>
+      <RouterLink to="/"></RouterLink>
     </div>
   </header>
   <RouterView />

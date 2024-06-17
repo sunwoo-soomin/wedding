@@ -3,14 +3,12 @@ import { RouterLink, RouterView } from 'vue-router'
 import HomeView from "./views/HomeView.vue";
 import FlowerRain from "./components/FlowerRain.vue";
 import FlowerRain2 from "./components/FlowerRain2.vue";
-
 </script>
 
 <template>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-    <FlowerRain/>
-    <FlowerRain2/>
+    
 
     <!-- <div class="wrapper">
       <div>You did it!</div>
@@ -22,6 +20,8 @@ import FlowerRain2 from "./components/FlowerRain2.vue";
       </nav>
     </div> -->
   </header>
+  <FlowerRain/>
+  <FlowerRain2/>
   <HomeView />
   <!-- <RouterView /> -->
 </template>

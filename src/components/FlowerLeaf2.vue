@@ -1,13 +1,9 @@
-<template>
-  <img class="flower-leaf" :src="imageUrl" :style="cssVars" />
-</template>
+<script setup lang="ts">
 
-<script>
-export default {
-  name: "FlowerLeaf",
-  computed: {
-    cssVars() {
-      const fallDelay = Math.random() * 20;
+import { computed } from 'vue'
+
+  const cssVars = computed(() => {
+			const fallDelay = Math.random() * 12;
       const shakeDelay = Math.random() * 3;
 
       const shakeDegree = Math.random() * 360;
@@ -30,17 +26,20 @@ export default {
         "--fall-duration": fallDuration + "s",
         "--shake-duration": shakeDuration + "s",
       };
-    },
-    imageUrl() {
-      const imageNumber = Math.floor(Math.random() * (6 - 1) + 1);
-      // return `/img/floral-leaf/floral-leaf-${imageNumber}.png`;
-      return `/src/assets/images/sunwoo_01.jpeg`;
-    },
-  },
-};
+		});
+  const imageUrl = computed(() => {
+    // const imageNumber = Math.floor(Math.random() * (6 - 1) + 1);
+//       // return `/img/floral-leaf/floral-leaf-${imageNumber}.png`;
+    return `/src/assets/images/sunwoo_01.jpeg`;
+  })
 </script>
 
-<style lang="scss" scoped>
+
+<template>
+  <img class="flower-leaf" :src="imageUrl" :style="cssVars" />
+</template>
+
+<style scoped>
 .flower-leaf {
   z-index: 100;
   left: var(--left-position);

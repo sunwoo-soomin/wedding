@@ -30,13 +30,14 @@ import { computed } from 'vue'
   const imageUrl = computed(() => {
     // const imageNumber = Math.floor(Math.random() * (6 - 1) + 1);
 //       // return `/img/floral-leaf/floral-leaf-${imageNumber}.png`;
-    return `/src/assets/images/heart.png`;
+    // return `@/assets/images/soomin_01.jpeg`;
+    return new URL(`@/assets/images/heart.png`, import.meta.url).href;
   })
 </script>
 
 <template>
   <main>
-    <img class="flower-leaf" :src="imageUrl" :style="cssVars" />
+    <img class="flower-leaf" :src='imageUrl' :style="cssVars" />
   </main>
 </template>
 

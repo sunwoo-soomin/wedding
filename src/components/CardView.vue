@@ -8,6 +8,18 @@
       <img class="soomin 01" src="@/assets/images/soomin_01.jpeg" />
 
     </div>
+    <div class="album">
+
+<img class="soomin 01" src="@/assets/images/soomin_01.jpeg" />
+<img class="soomin 01" src="@/assets/images/soomin_01.jpeg" />
+
+</div>
+<div class="album">
+
+<img class="soomin 01" src="@/assets/images/soomin_01.jpeg" />
+<img class="soomin 01" src="@/assets/images/soomin_01.jpeg" />
+
+</div>
   </div>
   <!-- <img class="sunwoo 01" src="@/assets/images/sunwoo_01.jpeg" /> -->
 </template>
